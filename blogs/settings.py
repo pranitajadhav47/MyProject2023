@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles','mediablog'
+    'django.contrib.staticfiles','mediablog','model_relation'
 ]
 
 MIDDLEWARE = [

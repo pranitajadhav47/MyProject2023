@@ -4,6 +4,7 @@ from .models import blogcontain
 
 @admin.register(blogcontain)
 class blogcontent(admin.ModelAdmin):
-    search_fields=['title']
-    list_filter=['title']
-    list_display =['title','author']
+  #  search_fields=['title']
+   # list_filter=['title']
+   # list_display =['title','author']
+   pass 

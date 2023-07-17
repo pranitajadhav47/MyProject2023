@@ -18,8 +18,11 @@
           <h5 class="card-title">descrption : {{i.author}}</h5>
           <p class="card-text">author : {{i.description}}</p>
           <p class="card-text">no_of_line:{{i.no_of_line}}</p>
+         {% if user.is_authenticated %}
+         
           <a href="/delete/{{i.id}}"><Button>DELETE</Button></a>
           <a href="/update/{{i.id}}"><Button>update</Button></a>
+        {% endif %}
         </div>
       </div>
 

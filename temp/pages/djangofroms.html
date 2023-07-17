@@ -8,14 +8,17 @@
     <title>django froms</title>
 </head>
 <body>
+    <h1> add blog</h1>
+    {% if user.is_authenticated %}
     <form action="" method="post">
     {{form.as_p}}
     {%csrf_token%}
-    
-
     <br>
 
-<button type="submit">submit</button>
-</form>
+    <button type="submit">submit</button>
+    </form>
+    {% else %}
+    <p>please log in</p>
+    {% endif %}
 </body>
 </html>

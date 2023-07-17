@@ -10,4 +10,4 @@ class ModelsDemoForm(forms.ModelForm):
     class Meta:
         model=blogcontain
 
-        fields='__all__'
+        fields=['title','description','author','no_of_line','img']

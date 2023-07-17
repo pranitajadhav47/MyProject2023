@@ -24,7 +24,8 @@ def addblogshandler(request):
     if request.GET.get('title'):
         title_r=request.GET.get('title')
         description_r=request.GET.get('description')
-        author_r=request.GET.get('author')
+       # author_r=request.GET.get('author')
+        author_r=request.user
         no_of_line_r=request.GET.get('no_of_line')
 
         obj=blogcontain(title=title_r,description=description_r,
@@ -51,7 +52,7 @@ def modelDjangoFrom(request):
     # field names as keys
     
     success = ''
-    form = ModelsDemoForm(request.POST or None)
+    form = ModelsDemoForm(request.POST,request.FILES or None)
     if form.is_valid():
         form.save()
         success = 'Successfully saved data'

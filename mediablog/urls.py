@@ -10,7 +10,7 @@ urlpatterns = [
 
     path('add-blog/delete_blog',views.deleteblog,name='deleteblog'),
     path('d-forms',views.djangofroms,name='djangofrom'),
-    path('forms',views.modelDjangoFrom,name='abc'),
+    path('model-forms',views.modelDjangoFrom,name='abc'),
     path('delete/<id>',views.deleteById),
     path('update/<id>',views.updateblog),
     path('update_data/<id>',views.updatedata)
